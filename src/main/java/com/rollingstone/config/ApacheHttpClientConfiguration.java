@@ -82,7 +82,7 @@ public class ApacheHttpClientConfiguration {
                     pool.closeExpiredConnections();
                     pool.closeIdleConnections(IDLE_CONNECTION_WAIT_TIME, TimeUnit.MILLISECONDS);
 
-                    LOG.info("Idle connection monitor: Closing expired and idle connections");
+                    logger.info("Idle connection monitor: Closing expired and idle connections");
                 }
             }
         };
