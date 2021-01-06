@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: category-deployment
+  name: product-catalog-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: category-deployment
+      app: product-catalog-deployment
   template:
     metadata:
       labels:
-        app: category-deployment
+        app: product-catalog-deployment
     spec:
       containers:
         - name: aws-ecr-spring-boot-category
